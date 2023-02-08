@@ -14,8 +14,7 @@ print('Number of terms: ',terms)
 for j in range(len(terms)):
     #set current time
     currTime = time.time()
-    for i in range(terms[j]):
-        Fibonacci(i)
+    Fibonacci(terms[j])
     #end time
     end = time.time()
     #execition time
@@ -23,10 +22,13 @@ for j in range(len(terms)):
 
 print('Time of execution: ',exec)
 
+plt.figure(1)
 plt.plot(terms,exec,color = 'r', marker = 'o')
 plt.xlabel('Number of terms')
 plt.ylabel('Time in seconds')
 plt.grid(True)
 plt.title('Dynamic method for Fibonacci numbers')
 plt.show()
+
+
     

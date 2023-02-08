@@ -17,8 +17,7 @@ print('Number of terms: ',terms)
 for j in range(len(terms)):
     #set current time
     currTime = time.time()
-    for i in range(terms[j]):
-        Fibonacci(i)
+    Fibonacci(terms[j])
     #end time
     end = time.time()
     #execition time

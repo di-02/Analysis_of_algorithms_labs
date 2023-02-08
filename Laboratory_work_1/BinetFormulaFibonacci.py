@@ -13,8 +13,7 @@ print('Number of terms: ',terms)
 for j in range(len(terms)):
     #set current time
     currTime = time.time()
-    for i in range(terms[j]):
-        Fibonacci(i)
+    Fibonacci(terms[j])
     #end time
     end = time.time()
     #execition time
@@ -28,4 +27,3 @@ plt.ylabel('Time in seconds')
 plt.grid(True)
 plt.title('Binet Formula method for Fibonacci numbers')
 plt.show()
-    
